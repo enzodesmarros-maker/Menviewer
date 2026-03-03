@@ -24,7 +24,7 @@ jobs:
         run: gradle assembleDebug
       - name: List build outputs
         run: find . -name "*.apk"
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: MemViewer-debug
           path: app/build/outputs/apk/debug/*.apk
